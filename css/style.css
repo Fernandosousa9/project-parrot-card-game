@@ -1,87 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 body {
-    background-color: #EEF9BF;
-    font-family: 'Roboto';
+  background-color: #eef9bf;
+  font-family: "Roboto";
 }
 
 h1 {
-    color: #7AB08E;
-    text-transform: uppercase;
-    width: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 66px;
-    letter-spacing: -0.004em;
-    text-align: center;
-    margin: 50px 0px;
+  color: #7ab08e;
+  text-transform: uppercase;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -0.004em;
+  text-align: center;
+  margin: 50px 0px;
 }
 
 .main {
-    width: 100%;
+  width: 100%;
 }
 
 .cartas {
-    height: 360px;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+  height: 360px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .cartas li {
-    background-color: black;
-    background-color: #A7E9AF;
-    border: 1 px solid #99CEA8;
-    width: 120px;
-    height: 150px;
-    margin: 15px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background-image: url(../images/front.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: black;
+  background-color: #a7e9af;
+  border: 1 px solid #99cea8;
+  width: 120px;
+  height: 150px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-image: url(../images/front.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cartas img {
-    width: 100%;
+  width: 100%;
 }
 
-.cronometro{
-    font-size: 40px;
-    font-weight: bold;
-    padding: 10px;
-    color: #E25882;
-    position: fixed;
-    top: 50px;
-    right: 40px;
-}
-
-@media (max-width: 880px) {
-    .cronometro{
-        font-size: 30px;
-        top: 60px;
-        right: 5px;
-    }
+.cronometro {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  color: #e25882;
+  position: fixed;
+  top: 50px;
+  right: 40px;
 }
 
 @media (max-width: 880px) {
-    .cronometro {
-        font-size: 30px;
-        top: 0px;
-        right: 0px;
-    }
+  .cronometro {
+    font-size: 30px;
+    top: 60px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 880px) {
+  .cronometro {
+    font-size: 30px;
+    top: 0px;
+    right: 0px;
+  }
 }
 
 @media (max-width: 540px) {
-    .cartas li {
-        margin-right: calc((100% - 120px)/2);
-        margin-left: calc((100% - 120px)/2);
-    }
+  .cartas li {
+    margin-right: calc((100% - 120px) / 2);
+    margin-left: calc((100% - 120px) / 2);
+  }
 }
