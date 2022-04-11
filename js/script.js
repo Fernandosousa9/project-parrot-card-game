@@ -67,14 +67,14 @@ function sortearParrots(qtdCartas) {
 
 //Mostra o tempo durante o jogo
 function mostrarTempo(tempoSegundos) {
-  let aside = document.querySelector(".cronometro");
+  let p = document.querySelector(".cronometro");
 
   //Limpa o número que está lá e insere o novo numero
-  aside.innerText = "";
-  aside.innerText = tempoSegundos;
+  p.innerText = "";
+  p.innerText = tempoSegundos;
 
   let body = document.querySelector("body");
-  body.appendChild(aside);
+  body.appendChild(p);
 }
 
 //Função para escolher o número de cartas do jogo
@@ -92,7 +92,7 @@ function iniciarJogo() {
     );
   }
 
-  let larguraJogo = (qtdCartas / 2) * 150;
+  let larguraJogo = (qtdCartas / 3) * 150;
   let ul = document.querySelector(".cartas");
   ul.style.width = larguraJogo + "px";
 
@@ -114,11 +114,11 @@ function finalizaJogo() {
   statusJogo = "ganhou";
   setTimeout(function () {
     alert(
-      "Você ganhou em: " +
+      "Você ganhou em: \n- " +
         contaJogada +
-        " jogadas e em: " +
+        " jogadas\n- " +
         tempoSegundos +
-        " segundos!"
+        " segundos"
     );
     reiniciarJogo();
   }, 500);
@@ -129,11 +129,15 @@ function reiniciarJogo() {
   let reiniciar = prompt("Você gostaria de reiniciar o jogo?");
 
   while (reiniciar !== "sim") {
+    if(reiniciar === "não"){
+      alert("Obrigado por jogar!! :)");
+    }
     reiniciar = prompt("Para reiniciar o jogo, digite a palavra sim");
   }
 
   resetVariaveis();
   iniciarJogo();
+
 }
 
 //Vira a carta ao clicar

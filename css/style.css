@@ -15,7 +15,6 @@ h1 {
   letter-spacing: -0.004em;
   text-align: center;
   margin: 50px 0px;
-  text-transform: uppercase;
 }
 
 .main {
@@ -57,10 +56,22 @@ h1 {
   font-size: 40px;
   font-weight: bold;
   padding: 10px;
-  color: #e25882;
+  color: #FFFFFF;
   position: fixed;
   top: 50px;
   right: 40px;
+  background-color: #7ab08e;
+  border-radius: 12px;
+}
+
+h1{
+  height: 20%;
+  font-size: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef9bf;
 }
 
 @media (max-width: 880px) {
@@ -74,8 +85,8 @@ h1 {
 @media (max-width: 880px) {
   .cronometro {
     font-size: 30px;
-    top: 0px;
-    right: 0px;
+    top: 2px;
+    right: 2px;
   }
 }
 
