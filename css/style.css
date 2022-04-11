@@ -7,7 +7,6 @@ body {
 
 h1 {
   color: #7ab08e;
-  text-transform: uppercase;
   width: 100%;
   font-style: normal;
   font-weight: 700;
@@ -16,6 +15,7 @@ h1 {
   letter-spacing: -0.004em;
   text-align: center;
   margin: 50px 0px;
+  text-transform: uppercase;
 }
 
 .main {
