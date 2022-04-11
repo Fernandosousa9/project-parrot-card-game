@@ -34,7 +34,7 @@ h1 {
 .cartas li {
   background-color: black;
   background-color: #a7e9af;
-  border: 1 px solid #99cea8;
+  border: 1px solid #99cea8;
   width: 120px;
   height: 150px;
   margin: 15px;
@@ -46,6 +46,8 @@ h1 {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+  transform-style: preserve-3d;
+  transition: transform .8s;
 }
 
 .cartas img {
