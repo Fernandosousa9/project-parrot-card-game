@@ -92,7 +92,7 @@ function iniciarJogo() {
     );
   }
 
-  let larguraJogo = (qtdCartas / 3) * 150;
+  let larguraJogo = (qtdCartas / 2) * 150;
   let ul = document.querySelector(".cartas");
   ul.style.width = larguraJogo + "px";
 
